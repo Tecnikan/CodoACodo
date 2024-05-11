@@ -3,9 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus dolore eius, sit dolorum nesciunt quo quos rem nostrum consequuntur non maiores ullam neque! Rem eius neque unde sapiente dolor vero!
+    <header>
+        <h1>Landing Page de Seguridad Web</h1>
+    </header>
+
+<section id="section1">
+    <h2>Slider de Imágenes</h2>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="imagen1.jpg" alt="foto uno" >
+        </div>
+        <div class="mySlides fade">
+            <img src="imagen2.jpg" alt="foto dos">
+        </div>
+        <div class="mySlides fade">
+            <img src="imagen3.jpg" alt="foto tres">
+        </div>
+    </div>
+    <br>
+    <div>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</section>
+
+<section id="section2">
+    <h2>Sección 2</h2>
+    <p>Más información relevante sobre seguridad web.</p>
+</section>
+
+<section id="section3">
+    <h2>Tabla de 3 Columnas</h2>
+    <table>
+        <tbody>
+        <tr>
+            <td>
+                <h3>Columna 1</h3>
+                <p>Contenido de la primera columna.</p>
+            </td>
+            <td>
+                <h3>Columna 2</h3>
+                <p>Contenido de la segunda columna.</p>
+            </td>
+            <td>
+                <h3>Columna 3</h3>
+                <p>Contenido de la tercera columna.</p>
+            </td>
+        </tr>
+    </tbody>
+    </table>
+</section>
+
+<section id="section4">
+    <h2>Sección 4</h2>
+    <p>Formulario de contacto:</p>
+    <form action="#" method="post">
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <textarea name="mensaje" placeholder="Mensaje" rows="4" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<footer>
+    <p>Derechos de autor © 2024. Todos los derechos reservados.</p>
+</footer>
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000); // Cambia la imagen cada 2 segundos
+    }
+    </script>
 </body>
 </html>
