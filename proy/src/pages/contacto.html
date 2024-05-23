@@ -1,0 +1,170 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="content-security-policy" content="" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <title>Tecnikan Soluciones Informaticas</title>
+  <!-- Favicon ico realizado a traves de: https://favicon.io/favicon-generator/ -->
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="../image/ico/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="../image/ico/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="../image/ico/favicon-16x16.png"
+  />
+  <link rel="manifest" href="../image/ico/site.webmanifest" />
+</head>
+<body>
+  <header class="header">
+    <div>
+      <div class="Tel">Tel.: (+54) 221 999 9999</div>
+      <div id="fecha_actual"></div>
+    </div>
+    <div class="header2">
+      <h1>Servicios Informaticos</h1>
+      <p>...soluciones a un clic de distancia.</p>
+    </div>
+  </header>
+  <div class="topnav">
+    <a href="/index.html">Inicio</a>
+    <a href="/pages/servicios.html">Servicios</a>
+    <a href="/pages/nosotros.html">Nosotros</a>
+    <a href="/pages/contacto.html" id="contacto">Contacto</a>
+  </div>
+  <!-- <div class="map">
+    <iframe title="Visitanos. Aquit te damos nuestra ubicacion."
+      src="https://www.openstreetmap.org/export/embed.html?bbox=-57.95052587985993%2C-34.917849575432754%2C-57.94838011264802%2C-34.91621105035801&amp;layer=mapnik"
+      style="border: 1px solid black"
+    ></iframe
+    ><br /><small
+      ><a href="https://www.openstreetmap.org/#map=19/-34.91703/-57.94945"
+        >View Larger Map</a
+      ></small
+    ></div> -->
+  <div class="container">
+    <form action="action_page.php">
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">Nombre</label>
+        </div>
+        <div class="col-75">
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Ingresar nombre.."
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Apellido</label>
+        </div>
+        <div class="col-75">
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Ingresar apellido.."
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="email">Email</label>
+        </div>
+        <div class="col-75">
+          <input
+            type="email"
+            name="email"
+            pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
+            placeholder="Ingresa un email valido..."
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="elegir">Elige uno o varios</label>
+        </div>
+        <div class="col-75">
+          <label class="container"
+            >Uno
+            <input type="checkbox" checked="checked" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"
+            >Dos
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"
+            >Tres
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"
+            >Cuatro
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="country">Pais</label>
+        </div>
+        <div class="col-75">
+          <select id="country" name="country">
+            <option value="australia">Argentina</option>
+            <option value="canada">Uruguay</option>
+            <option value="usa">Brasil</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Cuentanos:</label>
+          <div class="map">
+            <iframe title="Visitanos. Aquit te damos nuestra ubicacion."
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-57.95052587985993%2C-34.917849575432754%2C-57.94838011264802%2C-34.91621105035801&amp;layer=mapnik"
+              style="border: 1px solid black"
+            ></iframe
+            ><br /><mediun
+              ><a href="https://www.openstreetmap.org/#map=19/-34.91703/-57.94945"
+                >Ver en mayor tama&ntilde;o...</a
+              ></mediun
+            ></div>
+        </div>
+        <div class="col-75">
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Cuentanos algo.."
+            style="height: 200px"
+          ></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <!-- <input type="submit" value="Submit"> -->
+        <button type="submit">ENVIAR</button>
+      </div>
+    </form>
+  </div>
+  <div class="footer">
+    <div id="copy-left">
+      Copyright: <span class="copy-left">©</span> Grupo 14 - Curso Codo a Codo -
+      2024
+    </div>
+  </div>
+  <script src="../js/script.js"></script>
+</body>
